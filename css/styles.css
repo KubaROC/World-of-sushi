@@ -1,0 +1,15 @@
+html {
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main-container {
+  background-color: rgb(253, 253, 253);
+  width: auto;
+  height: 700px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 0px;
+}
