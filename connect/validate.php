@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"]== "POST") {
           
         if(($user['adminname'] == $adminname) && 
             ($user['password'] == $password)) {
-                header("Location: ../adminpage.php");
+                header("Location: ../admin/adminpage.php");
                 $_SESSION['username']= $username; 
         }
         else {
