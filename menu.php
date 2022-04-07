@@ -10,7 +10,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=<?php echo time(); ?>">
     <title>World Of Sushi</title>
   </head>
   <body>
@@ -26,13 +26,31 @@
       </p>
       <div class="navbar">
         <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
+        <a href="menu.php">Menu</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
     <div class="main-container">
-      <div class="box"></div>
+      <table>
+        <tr>
+          <th>Dish</th>
+          <th>About the dish</th>
+          <th>Price</th>
+          </tr>
+    <?php include_once('includes/connectionmenu.php'); 
+    $sql = 'SELECT * FROM menu';
+    
+    foreach ($conn->query($sql) as $row) {
+      echo("<tr>");
+      echo("<td>" . $row['Food']. "</td>");
+      echo("<td>" . $row['Description']. "</td>");
+      echo("<td>" . $row['Price']. "</td>");
+      echo("</tr>");
+      
+    }
+    ?>
+      </table>
       <div class="footer">
         <div class="linkjes">
           <a href="index.html">Home</a>
@@ -46,7 +64,8 @@
 
         </div>
         <div class="linkjes">
-          <a href="login.html">Login</a>
+          <a href="login.php">Login</a>
+          <a href="login.php">Admin panel</a>
         </div>
         <div class="linkjes">
           <p>©World of Sushi inc.</p>

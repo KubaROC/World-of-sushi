@@ -12,15 +12,15 @@ include_once('../includes/connectionmenu.php'); ?>
   <body>
     <div class="navbar">
       <ul>
-        <li><a class="active" href="#home">Menu</a></li>
-        <li><a href="addDish.php">New Product</a></li>
+        <li><a href="adminpage.php">Menu</a></li>
+        <li><a class="active" href="addDish.php">New Product</a></li>
         <li><a href="reservations.php">Reservations</a></li>
         <li style="float: right">
           <a class="logout" href="../php/logout.php">Log out</a>
         </li>
       </ul>
       <div class="main-container">
-      <table>
+      <table class="small">
         <tr>
           <th>Dish</th>
           <th>About the dish</th>
@@ -39,11 +39,27 @@ include_once('../includes/connectionmenu.php'); ?>
       echo("</tr>");
     }
     ?>
-          <td><form action="../php/removeItem.php" method="post">
-ID of the item to remove: <input type="number" name="ID"><br>
-<input type="submit" value="Remove"></td>  
+    <div class="insert">
+    <h1>Add to menu</h1>
+<form action="../php/addItem.php" method="post">
+Name of the dish: <input type="text" name="Name"><br>
+Description: <input type="text" name="Desc"><br>
+Price: <input type="number" name="Price"><br>
+<input type="submit" value="Add">
 </form>
-      </table>
+<div class="update">
+<form action="../php/updateItem.php" method="post">
+
+
+<h1>Update menu</h1>
+ID of the dish to update: <input type="number" name="ID"><br>
+Name of the dish: <input type="text" name="Name"><br>
+Description: <input type="text" name="Desc"><br>
+Price: <input type="number" name="Price"><br>
+<input type="submit" value="Update">
+</form>
+  </div>
+        </div>
       </div>
 
     </div>
