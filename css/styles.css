@@ -104,3 +104,7 @@ th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+div.main-container div.sushiOne img {
+  max-width: 500px;
+  max-height: 250px;
+}

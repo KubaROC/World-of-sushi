@@ -27,7 +27,7 @@
       <div class="navbar">
         <a href="index.html">Home</a>
         <a href="menu.php">Menu</a>
-        <a href="about.html">About</a>
+        <a href="order.php">Order</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
@@ -55,7 +55,7 @@
         <div class="linkjes">
           <a href="index.html">Home</a>
           <a href="menu.html">Menu</a>
-          <a href="about.html">About</a>
+          <a href="about.php">About</a>
           <a href="contact.html">Contact</a>
         </div>
         <div class="linkjes">

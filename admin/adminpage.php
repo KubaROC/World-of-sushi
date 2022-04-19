@@ -7,6 +7,7 @@ include_once('../includes/connectionmenu.php'); ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/admin.css?v=<?php echo time(); ?>">
+    <script src="../js/main.js"></script>
     <title>Admin home page</title>
   </head>
   <body>
@@ -39,6 +40,7 @@ include_once('../includes/connectionmenu.php'); ?>
       echo("</tr>");
     }
     ?>
+</script>
           <td><form action="../php/removeItem.php" method="post">
 ID of the item to remove: <input type="number" name="ID"><br>
 <input type="submit" value="Remove"></td>  
