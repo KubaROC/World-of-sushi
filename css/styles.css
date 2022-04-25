@@ -106,5 +106,15 @@ tr:nth-child(even) {
 }
 div.main-container div.sushiOne img {
   max-width: 500px;
-  max-height: 250px;
+  max-height: 250 px;
+}
+.main-container .reservations {
+  top: 50%;
+  margin-left: 45%;
+  width: 200px;
+}
+.main-container .resHeader {
+  position: absolute;
+  font-size: 50px;
+  left: 15%;
 }

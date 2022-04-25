@@ -28,7 +28,11 @@
         <a href="index.html">Home</a>
         <a href="menu.php">Menu</a>
         <a href="order.php">Order</a>
-        <a href="contact.html">Contact</a>
+        <a href="reserve.html">Reserve</a>
+        <form action="php/search.php" method="post">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Search</button>
+    </form>
       </div>
     </div>
     <div class="main-container">
@@ -56,7 +60,7 @@
           <a href="index.html">Home</a>
           <a href="menu.html">Menu</a>
           <a href="about.php">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="reserve.html">Reserve</a>
         </div>
         <div class="linkjes">
         <p>Straatnaam 123</p>
